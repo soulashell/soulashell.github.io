@@ -42,7 +42,7 @@ p {
 }
 
 .tenampa-link:hover {
-	color: #7f8c8d;
+	color: #c0392b;
 	background: #f39c12;
 	transition: background 1s ease-out;
 	padding: 5px;
