@@ -46,7 +46,7 @@ p {
 	background: #f39c12;
 	transition: background 1s ease-out;
 	padding: 5px;
-	transition: padding 0.2s ease-out;
+	transition: padding 0.2s ease-out, color 0.2s ease-out;
 	border-radius: 3px;
 	border-bottom: none;
 }
