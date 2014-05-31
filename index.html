@@ -3,18 +3,29 @@
 	<head>
 		<title>Salvador Sotelo - Web Developer</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="randomColor.js"></script>
 	</head>
 	<body>
 		<div class="container">
 			<h1 class="name">Salvador Sotelo</h1>
-			<p class="intro">I make websites</p>
-			<p class="intro">Currently working at <a class="tenampa-link" href="http://tenampa.mx" target="_blank">Tenampa Recordings</a></p>
-			<div class="contact-wrapper">
+			<p class="intro dark">I make websites</p>
+			<p class="intro dark">Currently working at <a class="tenampa-link" href="http://tenampa.mx" target="_blank">Tenampa Recordings</a></p>
+			<div class="contact-wrapper dark">
 				<p class="contact">Contact me:<br>
 					<a href="mailto:s@slhll.co">Email</a><br>
 					<a href="http://twitter.com/soulashell" target="_blank">Twitter</a>
 				</p>
 			</div>
 		</div>
+		<script charset="utf-8">
+			document.body.style.backgroundColor=randomColor({luminosity:'light'});
+			var darkColor = randomColor({luminosity:'dark'});
+			var elp = document.getElementsByTagName('p');
+			var ela = document.getElementsByTagName('a');
+			for(var i=0;i<=elp.length;i++){
+				elp[i].style.color=darkColor;
+				ela[i].style.color=darkColor;
+			}
+		</script>
 	</body>
 </html>
