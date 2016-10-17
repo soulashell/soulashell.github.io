@@ -28,7 +28,7 @@ a {
 	transition: background 0.2s ease-out, color 0.2s ease-out;
 }
 
-p {
+p, nav {
 	margin-top: -10px;
 	color: #4b5043;
 }
@@ -48,7 +48,8 @@ p {
 }
 
 .tenampa-link:hover:after {
-	content: none;
+  content: none;
+	transition: content 0.6s ease-out;
 }
 
 .contact-wrapper {
@@ -58,24 +59,10 @@ p {
 	right: 20%;
 }
 
-.effect a span {
-	-webkit-transition: -webkit-transform 0.3s;
-	-moz-transition: -moz-transform 0.3s;
-	transition: transform 0.3s;
-}
-
-.effect span a::before {
+.effect a:hover {
 	font-weight: 700;
-	-webkit-transform: translate3d(0,0,0);
-	-moz-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-}
-
-.effect a:hover span,
-.effect a:focus span {
-	-webkit-transform: translateY(-100%);
-	-moz-transform: translateY(-100%);
-	transform: translateY(-100%);
+	color: #090909;
+	transition: color 0.7s ease-in ,font-weight 0.7s ease-in;
 }
 
 @media only screen
